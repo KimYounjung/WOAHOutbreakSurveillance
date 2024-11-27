@@ -7,6 +7,8 @@ options(mc.cores = parallel::detectCores ())
 # susceptible animals (unit_size), whether there was no dead animal or not (zero), dead animals (dead_new), 
 # country of origin (country), season of outbreak (season), epidemiological unit of a premise (epi_unit), whether an outbreak was within a cluster or not (scan_cluster)
 # Then, create an index data for each outbreak. 
+
+data = read.csv(file = "data_sample.csv", col.names = T)
 index = model.matrix(~ 0 + country + season + epi_unit + scan_cluster, data = data)
 
 # specify input data for model fitting 
