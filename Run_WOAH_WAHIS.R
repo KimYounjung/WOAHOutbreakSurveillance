@@ -8,7 +8,7 @@ options(mc.cores = parallel::detectCores ())
 # country of origin (country), season of outbreak (season), epidemiological unit of a premise (epi_unit), whether an outbreak was within a cluster or not (scan_cluster)
 # Then, create an index data for each outbreak. 
 
-data = read.csv(file = "data_sample.csv", col.names = T)
+data = read.csv(file = "data_sample.csv", header = T)
 index = model.matrix(~ 0 + country + season + epi_unit + scan_cluster, data = data)
 
 # specify input data for model fitting 
