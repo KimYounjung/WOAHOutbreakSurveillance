@@ -38,6 +38,9 @@ The dataset is ready for model fitting and includes the following variables:
 - **epi\_unit**: The epidemiological unit of the premise where the outbreak was notified. The dataset includes two categories:
   - **Commercial**
   - **Backyard/Village**
+- **premise\_size**: Number of susceptible animals on the premise. Since premise size is right-skewed, it is log-transformed during model fitting (see `"WOAH_WAHIS.stan"`).
+- **no\_death**: Number of dead animals at outbreak notification. The model is fitted to this data using a negative binomial distribution (see `"WOAH_WAHIS.stan"`).
+- **zero\_death**: Binary variable indicating whether an outbreak was notified with zero deaths. The model is fitted to this data using a Bernoulli distribution (see `"WOAH_WAHIS.stan"`).
 - **season**: The season in which the outbreak occurred.
   - For countries/territories in the Northern Hemisphere:
     - **Spring**: March–May
@@ -45,13 +48,13 @@ The dataset is ready for model fitting and includes the following variables:
     - **Autumn**: September–November
     - **Winter**: December–February
   - For countries/territories in the Southern Hemisphere with distinct seasons, different months were assigned accordingly.
-- **cluster\_by\_income**: Classification of outbreaks based on spatiotemporal clustering and country income level:
+- **cluster**: Classification of outbreaks based on spatiotemporal clustering:
   - **1** = within a cluster
   - **0** = outside a cluster
-  - **Income levels**: High income, Upper middle income, Lower middle income
-- **premise\_size**: Number of susceptible animals on the premise. Since premise size is right-skewed, it is log-transformed during model fitting (see `"WOAH_WAHIS.stan"`).
-- **no\_death**: Number of dead animals at outbreak notification. The model is fitted to this data using a negative binomial distribution (see `"WOAH_WAHIS.stan"`).
-- **zero\_death**: Binary variable indicating whether an outbreak was notified with zero deaths. The model is fitted to this data using a Bernoulli distribution (see `"WOAH_WAHIS.stan"`).
+- **income**:
+  - **High income**
+  - **Upper middle income**
+  - **Lower middle income**
 
 ### **2.3 Raw Data Source**
 
