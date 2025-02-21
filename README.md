@@ -85,5 +85,5 @@ After model fitting, perform MCMC diagnostics, including:
 ## **Final Notes**
 
 - If you encounter installation issues with RStan, refer to the official troubleshooting guide: [https://github.com/stan-dev/rstan](https://github.com/stan-dev/rstan).
-- If you encounter any issues in model fitting, please contact **Younjung Kim [metopeja@gmail.com](metopeja@gmail.com)**.
+- If you encounter any issues in model fitting, please contact **Younjung Kim** [metopeja@gmail.com](metopeja@gmail.com).
 ---
