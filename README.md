@@ -22,7 +22,7 @@ install.packages("bayesplot")
 
 Install the **scales** package in R, which is used for plotting a posterior predictive check figure:
 ```r
-install.packages("bayesplot")
+install.packages("scales")
 ```
 
 ---
