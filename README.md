@@ -78,6 +78,19 @@ After model fitting, perform MCMC diagnostics, including:
 - **Assessing R-hat values**.
 - **Checking effective sample sizes (ESS)**.
 - **Examining traceplots**.
+- If the model runs successfully, the following traceplots should be expected. Please note that "early" in the traceplots for zero-fatality probability represent parameters associated with zero-fatality probability. 
+
+### Zero-Fatality Probability
+![Traceplot - Zero Fatality Probability](https://github.com/KimYounjung/WOAHOutbreakSurveillance/raw/main/Traceplot_zero%20fatality%20probability.png)
+
+### Fatality Slope
+![Traceplot - Fatality Slope](https://github.com/KimYounjung/WOAHOutbreakSurveillance/raw/main/Traceplot_fatality%20slope.png)
+
+### Fatality Threshold
+![Traceplot - Fatality Threshold](https://github.com/KimYounjung/WOAHOutbreakSurveillance/raw/main/Traceplot_fatality%20threshold.png)
+
+### Overdispersion
+![Traceplot - Overdispersion](https://github.com/KimYounjung/WOAHOutbreakSurveillance/raw/main/Traceplot_overdispersion.png)
 
 ### **3.3 Posterior predictive check**
 
