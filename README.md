@@ -16,7 +16,11 @@ Before installing **RStan**, you must configure your R installation to compile C
 ### **1.3 Install the "bayesplot" Package**
 
 Install the **bayesplot** package in R, which is used for examining MCMC traceplots:
+```r
+install.packages("bayesplot")
+```
 
+Install the **scales** package in R, which is used for plotting a posterior predictive check figure:
 ```r
 install.packages("bayesplot")
 ```
