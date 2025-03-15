@@ -69,7 +69,7 @@ The raw outbreak data are publicly available from the **WOAH WAHIS** platform: [
 1. Open **"Run\_WOAH\_WAHIS.R"** in R.
 2. Follow the steps described in the script to **run the model fitting**.
 3. Model fitting may take long (e.g. a couple of hours), depending on computational power.
-4. After a model run, save the MCMC output as **"WOAH\_WAHIS.rds"**.
+4. After running the model, save the MCMC output as **"WOAH\_WAHIS.rds"**. This file can be used to perform various analysis based on posterior estimates, including a posterior predictive check, without having to run the model again. 
 
 ### **3.2 Performing MCMC Diagnostics**
 
@@ -81,11 +81,9 @@ After model fitting, perform MCMC diagnostics, including:
 
 ### **3.3 Posterior predictive check**
 
-- After running the model, users can expect to see a plot similar to the one below, comparing observed and predicted numbers of dead birds.
-
+- After running the model, users can compare the total number of dead animals at initial outbreak notification, predicted based on the posterior estimates, with the observed number for each country/territory. If the model runs successfully, the following plot should be expected. 
 ![Posterior Predictive Check Plot](https://github.com/KimYounjung/WOAHOutbreakSurveillance/raw/main/Posterior%20predictive%20check%20plot.png)
-
-- The black dots represent observed data, while the blue triangles and error bars show the median and 95th percentile intervals of predicted number of dead birds per each country/territory.
+- The black dots represent observed data, while the blue triangles and error bars show the median and 95th percentile intervals of the predicted number of dead birds per each country/territory.
 ---
 
 ## **Final Notes**
